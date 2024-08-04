@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CGP.org</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+     <script type="module" src="../cookiSave/authCooki.js"></script>
+    <div class="quiz-container">
+        <h1>CGP.org</h1>
+        <h4>Career Guidance Program</h4>
+        <form id="quizForm">
+            <div class="question-container">
+                <div class="question active">
+                    <p>1. How much money do you want to earn?</p>
+                    <label>
+                        <input type="radio" name="money" value="1500$ - 2000$" required>
+                        1500$ - 2000$
+                    </label><br>
+                    <label>
+                        <input type="radio" name="money" value="3500$ - 4000$" required>
+                        3500$ - 4000$
+                    </label><br>
+                    <label>
+                        <input type="radio" name="money" value="10,000$ - 15,000$" required>
+                        10,000$ - 15,000$
+                    </label><br>
+                    <label>
+                        <input type="radio" name="money" value="15,000$ - 20,000$" required>
+                        15,000$ - 20,000$
+                    </label>
+                </div>
+                <div class="question">
+                    <p>2. From a scale from 1 to 4, how brave you are (1 is very brave)</p>
+                    <label>
+                        <input type="radio" name="cowardlyPerson" value="1" required>
+                        1
+                    </label><br>
+                    <label>
+                        <input type="radio" name="cowardlyPerson" value="2" required>
+                        2
+                    </label><br>
+                    <label>
+                        <input type="radio" name="cowardlyPerson" value="3" required>
+                        3
+                    </label><br>
+                    <label>
+                        <input type="radio" name="cowardlyPerson" value="4" required>
+                        4
+                    </label>
+                </div>
+                <div class="question">
+                    <p>3. Do you like to be in your house?</p>
+                    <label>
+                        <input type="radio" name="house" value="yes" required>
+                        Yes
+                    </label><br>
+                    <label>
+                        <input type="radio" name="house" value="no" required>
+                        No
+                    </label><br>
+                    <label>
+                        <input type="radio" name="house" value="i do not care" required>
+                        I do not care
+                    </label>
+                </div>
+                <div class="question">
+                    <p>4. Do you enjoy working with numbers and data?</p>
+                    <label>
+                        <input type="radio" name="numbers" value="yes" required>
+                        Yes
+                    </label><br>
+                    <label>
+                        <input type="radio" name="numbers" value="no" required>
+                        No
+                    </label><br>
+                    <label>
+                        <input type="radio" name="numbers" value="sometimes" required>
+                        Sometimes
+                    </label>
+                </div>
+                <div class="question">
+                    <p>5. How do you feel about working in a team?</p>
+                    <label>
+                        <input type="radio" name="team" value="love it" required>
+                        Love it
+                    </label><br>
+                    <label>
+                        <input type="radio" name="team" value="okay with it" required>
+                        Okay with it
+                    </label><br>
+                    <label>
+                        <input type="radio" name="team" value="prefer solo" required>
+                        Prefer solo
+                    </label>
+                </div>
+                <div class="question">
+                    <p>6. Do you enjoy creative activities like art or music?</p>
+                    <label>
+                        <input type="radio" name="creative" value="yes" required>
+                        Yes
+                    </label><br>
+                    <label>
+                        <input type="radio" name="creative" value="no" required>
+                        No
+                    </label><br>
+                    <label>
+                        <input type="radio" name="creative" value="sometimes" required>
+                        Sometimes
+                    </label>
+                </div>
+                <div class="question">
+                    <p>7. Are you comfortable with public speaking?</p>
+                    <label>
+                        <input type="radio" name="publicSpeaking" value="yes" required>
+                        Yes
+                    </label><br>
+                    <label>
+                        <input type="radio" name="publicSpeaking" value="no" required>
+                        No
+                    </label><br>
+                    <label>
+                        <input type="radio" name="publicSpeaking" value="depends on the situation" required>
+                        Depends on the situation
+                    </label>
+                </div>
+                <div class="question">
+                    <p>8. Do you prefer a structured or a flexible work environment?</p>
+                    <label>
+                        <input type="radio" name="workEnvironment" value="structured" required>
+                        Structured
+                    </label><br>
+                    <label>
+                        <input type="radio" name="workEnvironment" value="flexible" required>
+                        Flexible
+                    </label><br>
+                    <label>
+                        <input type="radio" name="workEnvironment" value="both" required>
+                        Both
+                    </label>
+                </div>
+            </div>
+            <button type="button" id="nextButton">Next</button>
+            <button type="submit" id="submitButton" style="display: none;">Submit</button>
+        </form>
+        <button id="installButton" style="display: none;">Download Page Screenshot</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

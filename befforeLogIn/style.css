@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url("./Start.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffff00;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #181818;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2 {
+  color: #fafafa; 
+  margin: 0;
+}
+
+/* Main Content Styles */
+main {
+  padding: 100px 0;
+  display: flex;
+}
+
+.btn {
+  background-color: #ffffff; 
+  color: #000000;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.help-section {
+  margin-top: 500px;
+  text-align: center;
+}
+
+.help-button {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.help-button:hover {
+  opacity: 0.8;
+}
+
+.help-content {
+  border: 1px solid #ffff00;
+  padding: 20px;
+  margin-top: 90px;
+  border-radius: 5px;
+  display: none;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background-color: #333;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 200px;
+  position: fixed;
+  top: 101px;
+  right: 0px;
+  transition: width 0.3s ease;
+}
+
+.sidebar-toggle {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid #ffff00;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.sidebar-toggle::before,
+.sidebar-toggle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #00ff04;
+  right: 10px;
+}
+
+.sidebar-toggle::before {
+  left: 0;
+}
+
+.sidebar-toggle::after {
+  right: 0;
+}
+
+.sidebar-toggle::before {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.sidebar-toggle::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+
+.sidebar.active {
+  width: 0px;
+  right: -10px;
+}
+
+.sidebar.active .sidebar-toggle {
+  transform: rotate(180deg);
+}
+
+.sidebar.active .sidebar-toggle::before,
+.sidebar.active .sidebar-toggle::after {
+  background-color: transparent;
+}
+
+.sidebar.active .sidebar-toggle::before {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.sidebar.active .sidebar-toggle::after {
+  transform: translateY(-50%) rotate(-45deg);
+}
